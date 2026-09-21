@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shadowred"
+version = "0.1.0"
+description = "Autonomous Adversarial AI Emulation & Continuous Red Teaming Platform"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT OR ZeroHack-Commercial" }
+authors = [{ name = "ZeroHack.org", email = "solutions@zerohack.org" }]
+keywords = ["red-teaming", "ai-security", "prompt-injection", "llm-security", "adversarial"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "build", "twine"]
+
+[project.urls]
+Homepage = "https://zerohack.org"
+Documentation = "https://zerohack.org/docs/shadowred"
+Repository = "https://github.com/ZeroHackOrg/shadowred"
+
+[project.scripts]
+sred = "shadowred.cli.interface:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

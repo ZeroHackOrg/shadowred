@@ -1,0 +1,12 @@
+services:
+  shadowred:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    ports:
+      - "9595:9595"
+    volumes:
+      - shadowred_audit:/opt/shadowred/data
+
+volumes:
+  shadowred_audit:

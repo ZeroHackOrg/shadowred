@@ -1,0 +1,62 @@
+Metadata-Version: 2.4
+Name: shadowred
+Version: 0.1.0
+Summary: Autonomous Adversarial AI Emulation & Continuous Red Teaming Platform
+Author-email: "ZeroHack.org" <solutions@zerohack.org>
+License: MIT OR ZeroHack-Commercial
+Project-URL: Homepage, https://zerohack.org
+Project-URL: Documentation, https://zerohack.org/docs/shadowred
+Project-URL: Repository, https://github.com/ZeroHackOrg/shadowred
+Keywords: red-teaming,ai-security,prompt-injection,llm-security,adversarial
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Security
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest>=7; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Dynamic: license-file
+
+# 🥷 Project ShadowRed (`sred`)
+
+[![CI](https://img.shields.io/badge/CI-passing-brightgreen)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
+[![Security Layer](https://img.shields.io/badge/Security-Autonomous%20Red%20Teaming-black)](#)
+
+**Autonomous Adversarial AI Emulation & Continuous Red Teaming Platform**
+
+Engineered by **[ZeroHack.org](https://zerohack.org)**.
+
+## 🥷 Overview
+
+ShadowRed (`sred`) replaces slow and expensive human-led red teaming with an autonomous multi-agent hacking swarm. Operating natively within CI/CD pipelines, ShadowRed continuously probes, maps, and executes multi-vector prompt injections, data-leak probes, and privilege escalation bypass chains against enterprise LLM applications.
+
+## Install
+
+```bash
+pip install -e .
+```
+
+## Quickstart
+
+```bash
+# 1. Run automated adversarial penetration test
+sred run
+
+# 2. Launch live radar telemetry web dashboard (:9595)
+sred web --port 9595
+```
+
+## License
+
+Dual-Licensed: MIT Core / ZeroHack Commercial. Developed by [ZeroHack.org](https://zerohack.org).
+Contact: solutions@zerohack.org.

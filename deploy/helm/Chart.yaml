@@ -1,0 +1,14 @@
+apiVersion: v2
+name: shadowred
+description: Autonomous Adversarial AI Emulation & Continuous Red Teaming Platform
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+keywords:
+  - red-teaming
+  - ai-security
+  - prompt-injection
+home: https://zerohack.org
+maintainers:
+  - name: ZeroHack.org
+    email: solutions@zerohack.org

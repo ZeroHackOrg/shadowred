@@ -1,0 +1,2 @@
+[console_scripts]
+sred = shadowred.cli.interface:main
